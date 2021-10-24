@@ -26,17 +26,21 @@ public class StartSelenium {
     public void testName(){
         WebElement element = wd.findElement(By.tagName("a"));
 
+        wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.cssSelector(" "));
+
         List<WebElement> elements = wd.findElements(By.tagName("a"));
         System.out.println(elements.size());
 
 
         wd.findElements(By.className("container"));
+        wd.findElements(By.cssSelector(".container"));
         wd.findElements(By.className("navbar-component_nav__1X_4m"));
         wd.findElements(By.className("login_login__3EHKB"));
 
         wd.findElement(By.id("root"));
 
-        wd.findElement(By.tagName(""));
+        wd.findElement(By.tagName(" "));
 
         wd.findElement(By.linkText("HOME"));
         wd.findElement(By.partialLinkText("HO"));
